@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+
+    <!-- BootsWatch CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h3 class="text-center">Contact App</h3>
+
+        <div class="row py-5">
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+
+                <div>
+                    <label for="nameField">Enter Your Name</label>
+                    <input type="text" class="form-control box-design shadow-none" id="nameField"
+                        placeholder="Mr. Example">
+                    <span id="name_empty" style="color: red; display: none;">Name Required * </span>
+                </div>
+
+                <div class="mt-2">
+                    <label for="phoneField">Enter Your PH Number</label>
+                    <input type="text" class="form-control box-design shadow-none" id="phoneField"
+                        placeholder="01XXXXXXXXX">
+                </div>
+
+                <div class="my-2">
+                    <label for="emailField">Enter Your Email</label>
+                    <input type="email" class="form-control box-design shadow-none" id="emailField"
+                        placeholder="name@example.com">
+                </div>
+
+                <button id="subbtn" class="btn btn-success mt-2 font-weight-bold">Submit</button>
+
+            </div>
+
+            <div class="col-md-4"></div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col">
+
+                <table class="table text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>PH Number</th>
+                            <th>Email</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tbody" class="">
+                        <!-- <tr>
+                            <td>Mark.......</td>
+                            <td>Otto...........</td>
+                            <td>@mdo..............</td>
+                            <td>
+                                <button class="btn btn-warning font-weight-bold">✏️ Edit</button>
+                                <button class="btn btn-danger font-weight-bold">❌ Delete</button>
+                            </td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Modal  -->
+
+    <div id="edit-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label for="editName">Edit Your Name</label>
+                        <input type="text" class="form-control box-design shadow-none" id="editName"
+                            placeholder="Mr. Example">
+                    </div>
+
+                    <div class="mt-2">
+                        <label for="editPhone">Edit PH Number</label>
+                        <input type="text" class="form-control box-design shadow-none" id="editPhone"
+                            placeholder="01XXXXXXXXX">
+                    </div>
+
+                    <div class="my-2">
+                        <label for="editEmail">Edit Your Email</label>
+                        <input type="email" class="form-control box-design shadow-none" id="editEmail"
+                            placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="updateBtn" type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

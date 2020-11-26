@@ -1,0 +1,12 @@
+body{
+  /* background: #2B3E50;
+  color: #fff; */
+  font-weight: 500;
+}
+.box-design{
+  border: 2px solid;
+}
+
+.box-design:focus{
+  border-color: #4d90fe;
+}
